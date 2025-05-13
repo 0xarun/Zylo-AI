@@ -1,0 +1,23 @@
+.login-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: none;
+    border: 1px solid var(--accent-blue);
+    border-radius: 0.5rem;
+    color: var(--accent-blue);
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.login-button:hover {
+    background: rgba(59, 130, 246, 0.1);
+}
+
+.login-button .user-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+    fill: var(--accent-blue);
+} 

@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.searchForm {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #2a2a2a;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #666;
+}
+
+.searchButton {
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  background: #444;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.searchButton:hover {
+  background: #555;
+}
+
+.searchButton:disabled {
+  background: #333;
+  cursor: not-allowed;
+}
+
+.messageList {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.messageContainer {
+  background: #2a2a2a;
+  border-radius: 8px;
+  padding: 16px;
+  border: 1px solid #333;
+}
+
+.query {
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.response {
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* Custom scrollbar for the main content */
+.mainContent::-webkit-scrollbar {
+  width: 8px;
+}
+
+.mainContent::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.mainContent::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.mainContent::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} 

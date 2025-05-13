@@ -1,0 +1,66 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: var(--secondary-bg);
+    border-right: 1px solid var(--card-border);
+    padding: 2rem 1rem;
+    overflow-y: auto;
+}
+
+.sidebar-section {
+    margin-bottom: 2rem;
+}
+
+.sidebar-section h3 {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
+}
+
+.history-list,
+.topics-list,
+.saved-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.history-list li,
+.topics-list li,
+.saved-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: var(--text-primary);
+}
+
+.history-list li:hover,
+.topics-list li:hover,
+.saved-list li:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.history-icon,
+.topic-icon,
+.saved-icon {
+    font-size: 1.2rem;
+}
+
+.history-text,
+.topic-text,
+.saved-text {
+    font-size: 0.95rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} 

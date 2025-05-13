@@ -1,0 +1,107 @@
+/* styles/ConversationThread.css */
+.conversation-thread {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.conversation-item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.conversation-item.latest {
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    box-shadow: 0 8px 16px rgba(59, 130, 246, 0.15);
+}
+
+.user-query {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 1rem;
+}
+
+.query-indicator {
+    background: var(--accent-blue);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.user-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: white;
+}
+
+.query-content {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    line-height: 1.6;
+    padding: 0.5rem 0;
+}
+
+.query-label,
+.response-label {
+    display: block;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.ai-response-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+.response-indicator {
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-shrink: 0;
+}
+
+.ai-icon {
+    background: linear-gradient(145deg, 
+        var(--accent-blue), 
+        var(--accent-purple));
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.response-content-wrapper {
+    flex: 1;
+    padding: 1rem;
+}
+
+/* Only show the follow-up section for the most recent message */
+.conversation-item:not(:last-child) .follow-up {
+    display: none;
+}

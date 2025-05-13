@@ -1,0 +1,163 @@
+.auth-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.auth-modal {
+    background: var(--background-color);
+    border-radius: 12px;
+    padding: 24px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    border: 1px solid var(--border-color);
+}
+
+.close-button {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.auth-content {
+    text-align: center;
+}
+
+.auth-content h2 {
+    margin-bottom: 24px;
+    color: var(--text-color);
+    font-size: 24px;
+}
+
+.google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--background-color);
+    color: var(--text-color);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.google-button:hover {
+    background: var(--hover-color);
+}
+
+.google-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.privacy-note {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    line-height: 1.4;
+}
+
+.auth-footer {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.search-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.search-modal {
+    background: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+}
+
+.search-modal-content {
+    padding: 24px;
+}
+
+.search-modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #666;
+    cursor: pointer;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.search-modal-close:hover {
+    background-color: #eee;
+}
+
+.search-modal-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.search-modal-header h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+.search-modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.auth-button {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px 24px !important;
+    font-size: 16px !important;
+}
+
+.auth-icon {
+    width: 20px;
+    height: 20px;
+} 

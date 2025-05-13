@@ -1,0 +1,81 @@
+.profile-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    backdrop-filter: blur(4px);
+}
+
+.profile-modal {
+    background: var(--primary-bg);
+    border-radius: 1rem;
+    border: 1px solid var(--card-border);
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    outline: none;
+}
+
+/* ... Rest of the modal styles from previous AuthModal.css ... */
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    background: var(--accent-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.profile-avatar svg {
+    width: 50px;
+    height: 50px;
+    fill: white;
+}
+
+.settings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.settings-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    background: none;
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+    text-align: left;
+}
+
+.settings-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.settings-item svg {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: var(--text-primary);
+}
+
+.settings-item.logout {
+    color: #EF4444;
+}
+
+.settings-item.logout svg {
+    fill: #EF4444;
+} 
