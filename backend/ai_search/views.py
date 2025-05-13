@@ -204,7 +204,7 @@ class SearchView(View):
     # OpenAI configuration
     client = OpenAI(
         base_url="https://openrouter.ai/api/v1",
-        api_key="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"
+        api_key=""
     )
 
     def get(self, request):
