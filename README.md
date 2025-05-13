@@ -29,7 +29,7 @@ Zylo-AI is an AI-powered search wrapper that filters real, human conversations f
 ### Backend Setup
 
 ```bash
-git clone https://github.com/yourusername/zylo-ai.git
+git clone https://github.com/0xarun/Zylo-AI.git
 cd zylo-ai/backend
 pip install -r requirements.txt
 python manage.py runserver
